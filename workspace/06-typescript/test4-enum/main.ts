@@ -29,6 +29,6 @@ enum Direction3 {
   NORTH = 'north',
   SOUTH = 'south',
   EAST = 'west', 
-  WEST = 'east'
+  WEST = 10
 }
 console.log(Direction3.NORTH, Direction3.WEST)//north east

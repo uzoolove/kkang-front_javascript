@@ -24,11 +24,12 @@ var Direction2;
 //직접 값을 지정할 수 있고, 어떤 변수에 값 지정이 안되면 그 위 변수 값에 1 더해서..
 console.log(Direction2.NORTH, Direction2.WEST); //10 31
 //숫자값 이외에.. 문자열등 다양한 타입의 데이터를 열거형 상수 변수에 대입할 수 있나?
+//가능하다..
 var Direction3;
 (function (Direction3) {
     Direction3["NORTH"] = "north";
     Direction3["SOUTH"] = "south";
     Direction3["EAST"] = "west";
-    Direction3["WEST"] = "east";
+    Direction3[Direction3["WEST"] = 10] = "WEST";
 })(Direction3 || (Direction3 = {}));
-console.log(Direction3.NORTH, Direction3.WEST);
+console.log(Direction3.NORTH, Direction3.WEST); //north east
